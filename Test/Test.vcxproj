@@ -80,10 +80,12 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ObjectFileName>$(IntDir)\$(ProjectName)\$(ConfigurationName)\%(RelativeDir)</ObjectFileName>
-      <AdditionalIncludeDirectories>F:\Cpp\Project\algo-struct\Algorithm;F:\Cpp\Project\algo-struct\DataStructure;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Cpp\Lib\googletest\1.8.1\googletest\include;F:\Cpp\Project\algo-struct\Algorithm;F:\Cpp\Project\algo-struct\DataStructure;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>F:\Cpp\Lib\googletest\1.8.1\googletest\msvc\2010\gtest-md\Win32-Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>F:\Cpp\Lib\googletest\1.8.1\googletest\msvc\2010\gtest-md\Win32-Debug\gtestd.lib;F:\Cpp\Lib\googletest\1.8.1\googletest\msvc\2010\gtest-md\Win32-Debug\gtest_maind.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
