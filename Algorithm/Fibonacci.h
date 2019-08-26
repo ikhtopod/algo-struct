@@ -1,26 +1,30 @@
 #pragma once
 
+#include <cstdint>
+
 namespace insoLLLent::Algorithm {
+
+using FibonacciType = uint32_t;
 
 /**
 	\brief –екурсивный расчет чисел ‘ибоначчи на этапе компил€ции.
 */
-template<int num>
+template<FibonacciType num>
 struct Fibonacci final {
-	static constexpr int value = 
+	static constexpr FibonacciType value =
 		Fibonacci<num - 1>::value + Fibonacci<num - 2>::value;
 };
 
 template<>
 struct Fibonacci<0> final {
 public:
-	static constexpr int value = 0;
+	static constexpr FibonacciType value = 0;
 };
 
 template<>
 struct Fibonacci<1> final {
 public:
-	static constexpr int value = 1;
+	static constexpr FibonacciType value = 1;
 };
 
 } // namespace insoLLLent::Algorithm
