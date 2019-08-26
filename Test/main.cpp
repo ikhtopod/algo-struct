@@ -1,9 +1,4 @@
-#pragma warning(push)
-#pragma warning(disable:26495)
-#include "gtest/gtest.h"
-#pragma warning(pop)
-
-#include <iostream>
+#include "stdafx.h"
 
 int main(int argc, char** argv) {
 	::testing::InitGoogleTest(&argc, argv);
