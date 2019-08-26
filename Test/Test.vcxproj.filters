@@ -27,11 +27,11 @@
     <ClCompile Include="main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Fibonacci.cpp">
-      <Filter>Test\Algorithm</Filter>
-    </ClCompile>
     <ClCompile Include="stdafx.cpp">
       <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Fibonacci_Test.cpp">
+      <Filter>Test\Algorithm</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
