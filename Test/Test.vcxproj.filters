@@ -13,10 +13,19 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Test">
+      <UniqueIdentifier>{69889dab-065c-4d10-bb3c-264f7bad4316}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test\Algorithm">
+      <UniqueIdentifier>{98c90eb0-8f2a-4773-89aa-2af1e93031f0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Fibonacci.cpp">
+      <Filter>Test\Algorithm</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
