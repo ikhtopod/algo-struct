@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algorithm", "Algorithm\Algo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "..\Test\Test\Test.vcxproj", "{9E7DB10A-74FA-422E-90BA-191036B7D56B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DataStructure", "..\DataStructure\DataStructure\DataStructure.vcxproj", "{260E7056-DC44-406C-9322-A02D9FE0FD30}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{9E7DB10A-74FA-422E-90BA-191036B7D56B}.Release|x64.Build.0 = Release|x64
 		{9E7DB10A-74FA-422E-90BA-191036B7D56B}.Release|x86.ActiveCfg = Release|Win32
 		{9E7DB10A-74FA-422E-90BA-191036B7D56B}.Release|x86.Build.0 = Release|Win32
+		{260E7056-DC44-406C-9322-A02D9FE0FD30}.Debug|x64.ActiveCfg = Debug|x64
+		{260E7056-DC44-406C-9322-A02D9FE0FD30}.Debug|x64.Build.0 = Debug|x64
+		{260E7056-DC44-406C-9322-A02D9FE0FD30}.Debug|x86.ActiveCfg = Debug|Win32
+		{260E7056-DC44-406C-9322-A02D9FE0FD30}.Debug|x86.Build.0 = Debug|Win32
+		{260E7056-DC44-406C-9322-A02D9FE0FD30}.Release|x64.ActiveCfg = Release|x64
+		{260E7056-DC44-406C-9322-A02D9FE0FD30}.Release|x64.Build.0 = Release|x64
+		{260E7056-DC44-406C-9322-A02D9FE0FD30}.Release|x86.ActiveCfg = Release|Win32
+		{260E7056-DC44-406C-9322-A02D9FE0FD30}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
