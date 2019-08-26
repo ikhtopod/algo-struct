@@ -19,6 +19,9 @@
     <Filter Include="Test\Algorithm">
       <UniqueIdentifier>{98c90eb0-8f2a-4773-89aa-2af1e93031f0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Test\DataStructure">
+      <UniqueIdentifier>{db39a45e-9daf-4661-a0f2-32f0bc11567b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
