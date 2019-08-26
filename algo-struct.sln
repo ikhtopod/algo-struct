@@ -8,6 +8,10 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DataStructure", "DataStructure\DataStructure.vcxproj", "{33ED89A0-AD97-47F9-937C-56C1CCBE59A8}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "Test\Test.vcxproj", "{773F6388-44E8-4B72-B545-4E2289FF7777}"
+	ProjectSection(ProjectDependencies) = postProject
+		{33ED89A0-AD97-47F9-937C-56C1CCBE59A8} = {33ED89A0-AD97-47F9-937C-56C1CCBE59A8}
+		{55394FA8-CB3D-47E0-BD61-4BE101CA7EB7} = {55394FA8-CB3D-47E0-BD61-4BE101CA7EB7}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
