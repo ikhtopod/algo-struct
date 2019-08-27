@@ -1,9 +1,9 @@
 #include "stdafx.h"
+
 #include "Fibonacci.h"
 
+using insoLLLent::Algorithm::Fibonacci;
 TEST(Algorithm_Fibonacci, CorrectValues) {
-	using insoLLLent::Algorithm::Fibonacci;
-
 	EXPECT_EQ(Fibonacci<0>::value, 0);
 	EXPECT_EQ(Fibonacci<1>::value, 1);
 	EXPECT_EQ(Fibonacci<2>::value, 1);
