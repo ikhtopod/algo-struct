@@ -7,7 +7,7 @@ namespace insoLLLent::Algorithm {
 using FibonacciType = uint32_t;
 
 /**
-	\brief Рекурсивный расчет чисел Фибоначчи на этапе компиляции.
+	\brief Р РµРєСѓСЂСЃРёРІРЅС‹Р№ СЂР°СЃС‡РµС‚ С‡РёСЃРµР» Р¤РёР±РѕРЅР°С‡С‡Рё РЅР° СЌС‚Р°РїРµ РєРѕРјРїРёР»СЏС†РёРё.
 */
 template<FibonacciType num>
 struct Fibonacci final {
