@@ -3,6 +3,7 @@
 #include "Fibonacci.h"
 
 using insoLLLent::Algorithm::Fibonacci;
+
 TEST(Algorithm_Fibonacci, CorrectValues) {
 	EXPECT_EQ(Fibonacci<0>::value, 0);
 	EXPECT_EQ(Fibonacci<1>::value, 1);
