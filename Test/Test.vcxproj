@@ -132,6 +132,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BinarySearch_Test.cpp" />
     <ClCompile Include="Color_Test.cpp" />
     <ClCompile Include="Fibonacci_Test.cpp" />
     <ClCompile Include="main.cpp" />

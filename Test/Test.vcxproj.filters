@@ -25,6 +25,9 @@
     <Filter Include="Test\Concept">
       <UniqueIdentifier>{0b772628-8665-46c2-af6c-903b7e789357}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Test\Algorithm\Search">
+      <UniqueIdentifier>{4cf5fbb0-c33f-4072-91f1-73cfdd1dfcb2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -38,6 +41,9 @@
     </ClCompile>
     <ClCompile Include="Color_Test.cpp">
       <Filter>Test\Concept</Filter>
+    </ClCompile>
+    <ClCompile Include="BinarySearch_Test.cpp">
+      <Filter>Test\Algorithm\Search</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

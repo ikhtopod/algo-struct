@@ -13,15 +13,27 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Исходные файлы\Search">
+      <UniqueIdentifier>{178166f8-5169-4cdf-9075-c930b82b4641}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Search">
+      <UniqueIdentifier>{266a9e63-c22c-4b46-a116-204cc6ca5659}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Fibonacci.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="BinarySearch.cpp">
+      <Filter>Исходные файлы\Search</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Fibonacci.h">
       <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="BinarySearch.h">
+      <Filter>Файлы заголовков\Search</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

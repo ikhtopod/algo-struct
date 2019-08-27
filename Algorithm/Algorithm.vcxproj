@@ -125,9 +125,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BinarySearch.cpp" />
     <ClCompile Include="Fibonacci.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BinarySearch.h" />
     <ClInclude Include="Fibonacci.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
