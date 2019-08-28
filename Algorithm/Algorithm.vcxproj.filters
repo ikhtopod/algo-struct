@@ -27,6 +27,9 @@
     <ClCompile Include="BinarySearch.cpp">
       <Filter>Исходные файлы\Search</Filter>
     </ClCompile>
+    <ClCompile Include="Sqrt.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Fibonacci.h">
@@ -34,6 +37,9 @@
     </ClInclude>
     <ClInclude Include="BinarySearch.h">
       <Filter>Файлы заголовков\Search</Filter>
+    </ClInclude>
+    <ClInclude Include="Sqrt.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

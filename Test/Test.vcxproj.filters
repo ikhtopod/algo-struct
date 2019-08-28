@@ -45,6 +45,9 @@
     <ClCompile Include="BinarySearch_Test.cpp">
       <Filter>Test\Algorithm\Search</Filter>
     </ClCompile>
+    <ClCompile Include="Sqrt_Test.cpp">
+      <Filter>Test\Algorithm</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
