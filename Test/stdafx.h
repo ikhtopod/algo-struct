@@ -4,6 +4,8 @@
 #include <ostream>
 #include <vector>
 #include <algorithm>
+#include <functional>
+#include <iterator>
 #include <numeric>
 #include <utility>
 #include <tuple>
