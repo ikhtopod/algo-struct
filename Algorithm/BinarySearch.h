@@ -27,7 +27,7 @@ size_t BinarySearch(const std::vector<T>& arr, const T& value) {
 		} else {
 			// если есть повторяющиеся элементы, 
 			// то "откатываем" индекс к первому из них
-			while (navel > 0 && arr[navel] == arr[navel - 1]) {
+			while (navel > head && arr[navel] == arr[navel - 1]) {
 				--navel;
 			}
 
