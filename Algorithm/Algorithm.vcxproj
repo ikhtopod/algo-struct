@@ -127,11 +127,13 @@
   <ItemGroup>
     <ClCompile Include="BinarySearch.cpp" />
     <ClCompile Include="Fibonacci.cpp" />
+    <ClCompile Include="PrimeNumber.cpp" />
     <ClCompile Include="Sqrt.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinarySearch.h" />
     <ClInclude Include="Fibonacci.h" />
+    <ClInclude Include="PrimeNumber.h" />
     <ClInclude Include="Sqrt.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

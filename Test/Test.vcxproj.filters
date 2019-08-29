@@ -48,6 +48,9 @@
     <ClCompile Include="Sqrt_Test.cpp">
       <Filter>Test\Algorithm</Filter>
     </ClCompile>
+    <ClCompile Include="PrimeNumber.cpp">
+      <Filter>Test\Algorithm</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">

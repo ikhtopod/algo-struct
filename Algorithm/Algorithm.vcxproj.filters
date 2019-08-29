@@ -30,6 +30,9 @@
     <ClCompile Include="Sqrt.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="PrimeNumber.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Fibonacci.h">
@@ -39,6 +42,9 @@
       <Filter>Файлы заголовков\Search</Filter>
     </ClInclude>
     <ClInclude Include="Sqrt.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="PrimeNumber.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
