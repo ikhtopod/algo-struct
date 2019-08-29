@@ -147,7 +147,7 @@ TEST(DataStructure_LinkedList, Reset) {
 	EXPECT_NE(ll.GetCurrent().value, 128);
 	EXPECT_NE(ll.GetCurrent().next, nullptr);
 
-	ll.Reset(); // Проверка повторного вызова Reset
+	ll.Reset(); // РџСЂРѕРІРµСЂРєР° РїРѕРІС‚РѕСЂРЅРѕРіРѕ РІС‹Р·РѕРІР° Reset
 
 	EXPECT_EQ(ll.GetCurrent().value, 0);
 	EXPECT_EQ(ll.GetCurrent().next, &node_128);
@@ -202,7 +202,7 @@ TEST(DataStructure_LinkedList, Next) {
 	EXPECT_NE(ll.GetCurrent().value, 0);
 	EXPECT_NE(ll.GetCurrent().next, &node_128);
 
-	// Повторный вызов Next для последнего элемента списка
+	// РџРѕРІС‚РѕСЂРЅС‹Р№ РІС‹Р·РѕРІ Next РґР»СЏ РїРѕСЃР»РµРґРЅРµРіРѕ СЌР»РµРјРµРЅС‚Р° СЃРїРёСЃРєР°
 	ll.Next();
 
 	EXPECT_TRUE(ll.IsLast());
@@ -216,7 +216,7 @@ TEST(DataStructure_LinkedList, Next) {
 	EXPECT_NE(ll.GetCurrent().value, 0);
 	EXPECT_NE(ll.GetCurrent().next, &node_128);
 
-	// Возвращаемся к началу списка
+	// Р’РѕР·РІСЂР°С‰Р°РµРјСЃСЏ Рє РЅР°С‡Р°Р»Сѓ СЃРїРёСЃРєР°
 	ll.Reset();
 
 	EXPECT_FALSE(ll.IsLast());
@@ -233,19 +233,19 @@ TEST(DataStructure_LinkedList, Next) {
 
 
 TEST(DataStructure_LinkedList, RemoveNext) {
-	// Создать список из двух узлов
+	// РЎРѕР·РґР°С‚СЊ СЃРїРёСЃРѕРє РёР· РґРІСѓС… СѓР·Р»РѕРІ
 	LinkedList ll { 128 };
 
 	Node node_512 { 512 };
 	ll.Insert(&node_512);
 
-	// Вставить еще один элемент в середину списка
+	// Р’СЃС‚Р°РІРёС‚СЊ РµС‰Рµ РѕРґРёРЅ СЌР»РµРјРµРЅС‚ РІ СЃРµСЂРµРґРёРЅСѓ СЃРїРёСЃРєР°
 	Node node_256 { 256 };
 	ll.Insert(&node_256);
 	ll.Next();
 
-	ll.Reset(); // Перейти в начало списка
-	ll.RemoveNext(); // Удалить второй элемент
+	ll.Reset(); // РџРµСЂРµР№С‚Рё РІ РЅР°С‡Р°Р»Рѕ СЃРїРёСЃРєР°
+	ll.RemoveNext(); // РЈРґР°Р»РёС‚СЊ РІС‚РѕСЂРѕР№ СЌР»РµРјРµРЅС‚
 
 	EXPECT_EQ(ll.GetCurrent().value, 128);
 	EXPECT_EQ(ll.GetCurrent().next, &node_512);
@@ -256,7 +256,7 @@ TEST(DataStructure_LinkedList, RemoveNext) {
 	EXPECT_NE(ll.GetCurrent().next, &node_256);
 	EXPECT_NE(ll.GetCurrent().next, nullptr);
 
-	ll.Next(); // Перейти ко второму элементу
+	ll.Next(); // РџРµСЂРµР№С‚Рё РєРѕ РІС‚РѕСЂРѕРјСѓ СЌР»РµРјРµРЅС‚Сѓ
 
 	EXPECT_EQ(ll.GetCurrent().value, 512);
 	EXPECT_EQ(ll.GetCurrent().next, nullptr);
@@ -267,8 +267,8 @@ TEST(DataStructure_LinkedList, RemoveNext) {
 	EXPECT_NE(ll.GetCurrent().next, &node_256);
 	EXPECT_NE(ll.GetCurrent().next, &node_512);
 
-	// Попытка удалить следующий элемент, 
-	// когда текущий элемент является последним
+	// РџРѕРїС‹С‚РєР° СѓРґР°Р»РёС‚СЊ СЃР»РµРґСѓСЋС‰РёР№ СЌР»РµРјРµРЅС‚, 
+	// РєРѕРіРґР° С‚РµРєСѓС‰РёР№ СЌР»РµРјРµРЅС‚ СЏРІР»СЏРµС‚СЃСЏ РїРѕСЃР»РµРґРЅРёРј
 	ll.RemoveNext();
 
 	EXPECT_EQ(ll.GetCurrent().value, 512);
@@ -280,10 +280,10 @@ TEST(DataStructure_LinkedList, RemoveNext) {
 	EXPECT_NE(ll.GetCurrent().next, &node_256);
 	EXPECT_NE(ll.GetCurrent().next, &node_512);
 
-	ll.Reset(); // Вернуться в начало списка
-	ll.RemoveNext(); // Кдалить второй элемент
+	ll.Reset(); // Р’РµСЂРЅСѓС‚СЊСЃСЏ РІ РЅР°С‡Р°Р»Рѕ СЃРїРёСЃРєР°
+	ll.RemoveNext(); // РљРґР°Р»РёС‚СЊ РІС‚РѕСЂРѕР№ СЌР»РµРјРµРЅС‚
 
-	// В списке теперь только один узел
+	// Р’ СЃРїРёСЃРєРµ С‚РµРїРµСЂСЊ С‚РѕР»СЊРєРѕ РѕРґРёРЅ СѓР·РµР»
 	EXPECT_EQ(ll.GetCurrent().value, 128);
 	EXPECT_EQ(ll.GetCurrent().next, nullptr);
 
