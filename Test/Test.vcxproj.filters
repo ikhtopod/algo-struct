@@ -51,6 +51,9 @@
     <ClCompile Include="PrimeNumber.cpp">
       <Filter>Test\Algorithm</Filter>
     </ClCompile>
+    <ClCompile Include="LinkedList_Test.cpp">
+      <Filter>Test\DataStructure</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">

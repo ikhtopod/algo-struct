@@ -135,6 +135,7 @@
     <ClCompile Include="BinarySearch_Test.cpp" />
     <ClCompile Include="Color_Test.cpp" />
     <ClCompile Include="Fibonacci_Test.cpp" />
+    <ClCompile Include="LinkedList_Test.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PrimeNumber.cpp" />
     <ClCompile Include="Sqrt_Test.cpp" />
