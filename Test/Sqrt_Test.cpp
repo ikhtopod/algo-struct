@@ -8,7 +8,7 @@ TEST(Algorithm_Sqrt, Default_Sqrt0_Return0) {
 	EXPECT_EQ(Sqrt(0), 0);
 }
 
-TEST(Algorithm_Sqrt, Sqrt1_Return1) {
+TEST(Algorithm_Sqrt, Default_Sqrt1_Return1) {
 	EXPECT_EQ(Sqrt(1), 1);
 }
 
