@@ -54,6 +54,9 @@
     <ClCompile Include="LinkedList_Test.cpp">
       <Filter>Test\DataStructure</Filter>
     </ClCompile>
+    <ClCompile Include="Gcd_Test.cpp">
+      <Filter>Test\Algorithm</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">

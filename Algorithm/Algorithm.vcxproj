@@ -127,12 +127,14 @@
   <ItemGroup>
     <ClCompile Include="BinarySearch.cpp" />
     <ClCompile Include="Fibonacci.cpp" />
+    <ClCompile Include="Gcd.cpp" />
     <ClCompile Include="PrimeNumber.cpp" />
     <ClCompile Include="Sqrt.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinarySearch.h" />
     <ClInclude Include="Fibonacci.h" />
+    <ClInclude Include="Gcd.h" />
     <ClInclude Include="PrimeNumber.h" />
     <ClInclude Include="Sqrt.h" />
   </ItemGroup>
