@@ -3,33 +3,11 @@
 namespace insoLLLent::Algorithm {
 
 /**
-	\brief Извлечение квадратного корня
-	\param target целевое число
-	\param power степень корня
-	\return извлеченный корень
+	\brief РР·РІР»РµС‡РµРЅРёРµ РєРІР°РґСЂР°С‚РЅРѕРіРѕ РєРѕСЂРЅСЏ
+	\param target С†РµР»РµРІРѕРµ С‡РёСЃР»Рѕ
+	\param power СЃС‚РµРїРµРЅСЊ РєРѕСЂРЅСЏ
+	\return РёР·РІР»РµС‡РµРЅРЅС‹Р№ РєРѕСЂРµРЅСЊ
 */
-size_t Sqrt(size_t target, size_t power = 2) {
-	if (power == 0) return 0;
-
-	size_t left = 1;
-	size_t right = target / power + 1;
-	size_t result = 0;
-
-	while (left <= right) {
-		size_t middle = left + (right - left) / 2;
-
-		size_t div = target;
-		for (size_t p = power; p > 1; div /= middle, --p);
-
-		if (middle <= div) {
-			left = middle + 1;
-			result = middle;
-		} else {
-			right = middle - 1;
-		}
-	}
-
-	return result;
-}
+size_t Sqrt(size_t target, size_t power = 2);
 
 } // namespace insoLLLent::Algorithm
