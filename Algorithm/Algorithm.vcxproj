@@ -129,6 +129,7 @@
     <ClCompile Include="Fibonacci.cpp" />
     <ClCompile Include="Gcd.cpp" />
     <ClCompile Include="PrimeNumber.cpp" />
+    <ClCompile Include="SelectionSort.cpp" />
     <ClCompile Include="Sqrt.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -136,6 +137,7 @@
     <ClInclude Include="Fibonacci.h" />
     <ClInclude Include="Gcd.h" />
     <ClInclude Include="PrimeNumber.h" />
+    <ClInclude Include="SelectionSort.h" />
     <ClInclude Include="Sqrt.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

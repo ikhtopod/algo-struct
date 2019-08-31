@@ -60,6 +60,9 @@
     <ClCompile Include="Gcd_Test.cpp">
       <Filter>Test\Algorithm</Filter>
     </ClCompile>
+    <ClCompile Include="SelectionSort_Test.cpp">
+      <Filter>Test\Algorithm\Sort</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
