@@ -28,6 +28,9 @@
     <Filter Include="Test\Algorithm\Search">
       <UniqueIdentifier>{4cf5fbb0-c33f-4072-91f1-73cfdd1dfcb2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Test\Algorithm\Sort">
+      <UniqueIdentifier>{7e0c0d33-9066-4add-b07d-a75a83d6ca79}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
