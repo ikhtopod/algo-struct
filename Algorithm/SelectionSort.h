@@ -11,12 +11,12 @@ void SelectionSort(T& elements) {
 		size_t minimum = current;
 
 		for (size_t i = current + 1; i < elements.size(); ++i) {
-			if (elements[minimum] > elements[i]) {
+			if (elements[i] < elements[minimum]) {
 				minimum = i;
 			}
 		}
 
-		if (current != minimum) {
+		if (current < minimum) {
 			std::swap(elements[current], elements[minimum]);
 		}
 	}
