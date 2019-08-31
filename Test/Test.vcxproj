@@ -133,6 +133,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BinarySearch_Test.cpp" />
+    <ClCompile Include="BubbleSort_Test.cpp" />
     <ClCompile Include="Color_Test.cpp" />
     <ClCompile Include="Fibonacci_Test.cpp" />
     <ClCompile Include="Gcd_Test.cpp" />

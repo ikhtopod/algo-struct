@@ -66,6 +66,9 @@
     <ClCompile Include="InsertionSort_Test.cpp">
       <Filter>Test\Algorithm\Sort</Filter>
     </ClCompile>
+    <ClCompile Include="BubbleSort_Test.cpp">
+      <Filter>Test\Algorithm\Sort</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
