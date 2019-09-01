@@ -142,6 +142,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PrimeNumber.cpp" />
     <ClCompile Include="SelectionSort_Test.cpp" />
+    <ClCompile Include="ShellSort_Test.cpp" />
     <ClCompile Include="Sqrt_Test.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

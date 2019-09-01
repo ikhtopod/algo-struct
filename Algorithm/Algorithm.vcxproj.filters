@@ -51,6 +51,9 @@
     <ClCompile Include="BubbleSort.cpp">
       <Filter>Исходные файлы\Sort</Filter>
     </ClCompile>
+    <ClCompile Include="ShellSort.cpp">
+      <Filter>Исходные файлы\Sort</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Fibonacci.h">
@@ -75,6 +78,9 @@
       <Filter>Файлы заголовков\Sort</Filter>
     </ClInclude>
     <ClInclude Include="BubbleSort.h">
+      <Filter>Файлы заголовков\Sort</Filter>
+    </ClInclude>
+    <ClInclude Include="ShellSort.h">
       <Filter>Файлы заголовков\Sort</Filter>
     </ClInclude>
   </ItemGroup>

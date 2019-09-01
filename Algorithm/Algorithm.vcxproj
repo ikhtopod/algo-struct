@@ -132,6 +132,7 @@
     <ClCompile Include="InsertionSort.cpp" />
     <ClCompile Include="PrimeNumber.cpp" />
     <ClCompile Include="SelectionSort.cpp" />
+    <ClCompile Include="ShellSort.cpp" />
     <ClCompile Include="Sqrt.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -142,6 +143,7 @@
     <ClInclude Include="InsertionSort.h" />
     <ClInclude Include="PrimeNumber.h" />
     <ClInclude Include="SelectionSort.h" />
+    <ClInclude Include="ShellSort.h" />
     <ClInclude Include="Sqrt.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
