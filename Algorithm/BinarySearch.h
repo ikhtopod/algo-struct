@@ -14,8 +14,9 @@ namespace insoLLLent::Algorithm::Search {
 */
 template <typename T>
 size_t BinarySearch(const std::vector<T>& arr, const T& target) {
-	if (arr.size() == 0)
-		return std::numeric_limits<size_t>::max();
+	size_t result = std::numeric_limits<size_t>::max();
+
+	if (arr.size() == 0) return result;
 
 	size_t left = 0;
 	size_t right = arr.size() - 1;
@@ -30,17 +31,28 @@ size_t BinarySearch(const std::vector<T>& arr, const T& target) {
 		} else if (arr[middle] > target) {
 			right = middle - 1;
 		} else {
-			// если есть повторяющиеся элементы, 
-			// то "откатываем" индекс к первому из них
-			while (middle > left && arr[middle] == arr[middle - 1]) {
-				--middle;
-			}
-
-			return middle;
+			result = middle;
+			break;
 		}
 	}
 
-	return std::numeric_limits<size_t>::max();
+	// если есть повторяющиеся элементы, то найти первый из них
+	if (result != std::numeric_limits<size_t>::max() && left < result) {
+		right = result;
+
+		while (left < right) {
+			size_t middle = left + (right - left) / 2;
+
+			if (arr[middle] == target) {
+				result = middle;
+				right = middle - 1;
+			} else {
+				left = middle + 1;
+			}
+		}
+	}
+
+	return result;
 }
 
 } // namespace insoLLLent::Algorithm::Search
