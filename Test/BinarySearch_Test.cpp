@@ -39,15 +39,13 @@ TEST(Algorithm_Search_BinarySearch, BigVector_Found) {
 	std::vector<int> vec(10'000'000);
 	std::fill(vec.begin(), vec.end(), 23);
 
-	EXPECT_EQ(BinarySearch<int>(vec, 23), 0); // долго :(
+	EXPECT_EQ(BinarySearch<int>(vec, 23), 0);
 }
 
-/*
-// it is correct, but long
 TEST(Algorithm_Search_BinarySearch, BigVector_Found_02) {
 	std::vector<int> vec(10'000'000);
 	std::fill(vec.begin(), std::next(vec.begin(), 5'000'001), 23);
 	std::fill(std::next(vec.begin(), 4'999'999), vec.end(), 44);
 
 	EXPECT_EQ(BinarySearch<int>(vec, 44), 4'999'999);
-}*/ 
+}

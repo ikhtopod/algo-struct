@@ -1,5 +1,6 @@
 #pragma once
 
+#include <iostream>
 #include <vector>
 #include <limits>
 
@@ -13,24 +14,29 @@ namespace insoLLLent::Algorithm::Search {
 */
 template <typename T>
 size_t BinarySearch(const std::vector<T>& arr, const T& target) {
-	size_t head = 0;
-	size_t tail = arr.size();
+	if (arr.size() == 0)
+		return std::numeric_limits<size_t>::max();
 
-	while (head < tail) {
-		size_t navel = head + (tail - head) / 2;
+	size_t left = 0;
+	size_t right = arr.size() - 1;
 
-		if (arr[navel] < target) {
-			head = navel + 1;
-		} else if (arr[navel] > target) {
-			tail = navel;
+	while (left <= right) {
+		size_t num = ((target - arr[left]) * (right - left));
+		size_t den = arr[right] - arr[left];
+		size_t middle = den ? (num / den) : left;
+
+		if (arr[middle] < target) {
+			left = middle + 1;
+		} else if (arr[middle] > target) {
+			right = middle - 1;
 		} else {
 			// если есть повторяющиеся элементы, 
 			// то "откатываем" индекс к первому из них
-			while (navel > head && arr[navel] == arr[navel - 1]) {
-				--navel;
+			while (middle > left && arr[middle] == arr[middle - 1]) {
+				--middle;
 			}
 
-			return navel;
+			return middle;
 		}
 	}
 
