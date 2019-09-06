@@ -17,8 +17,7 @@ size_t BinarySearch(const std::vector<T>& arr, const T& value) {
 	size_t tail = arr.size();
 
 	while (head < tail) {
-		// как вариант: (tail + head) / 2, но может возникнуть переполнение
-		size_t navel = ((tail - head) / 2) + head;
+		size_t navel = head + (tail - head) / 2;
 
 		if (arr[navel] < value) {
 			head = navel + 1;
