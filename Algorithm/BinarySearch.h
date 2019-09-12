@@ -24,7 +24,7 @@ size_t BinarySearch(const std::vector<T>& arr, const T& target) {
 	while (left <= right) {
 		size_t num = ((target - arr[left]) * (right - left));
 		size_t den = arr[right] - arr[left];
-		size_t middle = den ? (num / den) : left;
+		size_t middle = den ? (left + num / den) : left;
 
 		if (arr[middle] < target) {
 			left = middle + 1;

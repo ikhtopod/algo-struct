@@ -33,6 +33,8 @@ TEST(Algorithm_Search_BinarySearch, Found) {
 		84, 87, 90, 92, 98, 108 }, 82), 13);
 	EXPECT_EQ(BinarySearch<int>(
 		{ -8, -7, -6, -6, -4, 2, 6, 7, 8, 15 }, 15), 9);
+
+	EXPECT_EQ(BinarySearch<int>({ 2, 7, 12, 31, 90, 114 }, 12), 2);
 }
 
 TEST(Algorithm_Search_BinarySearch, BigVector_Found) {
