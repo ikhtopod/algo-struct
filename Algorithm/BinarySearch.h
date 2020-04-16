@@ -10,7 +10,7 @@ namespace insoLLLent::Algorithm::Search {
 	\brief Бинарный поиск в отсортированном массиве.
 	\param[in] arr массив элементов
 	\param[in] value искомое значение
-	\return в случае успеза вернет индекс элемента в массиве, иначе - максимальное значение типа size_t
+	\return в случае успеха вернет индекс элемента в массиве, иначе - максимальное значение типа size_t
 */
 template <typename T>
 size_t BinarySearch(const std::vector<T>& arr, const T& target) {
